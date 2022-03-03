@@ -31,13 +31,19 @@ section.packages {
 .section-gap {
     padding: 80px 0;
 }
-section#feature {
+section#about {
     padding: 80px 0;
-    background: #fff !important;
+    background: #f3f3f3 !important;
 }
-.card__container.grid.swiper-wrapper {
+img.logo-mwp {
+    width: 100px;
+}
+section#home {
+    background: url("../images/Iron-and-Steel.jpg");
+}
+/* .card__container.grid.swiper-wrapper {
     cursor: -webkit-grab;
-}
+} */
 .card__pricing_custom {
     color: #fff;
     display: flex;
@@ -46,6 +52,19 @@ section#feature {
     padding: 5px 10px;
     border-radius: 10px;
     width: auto;
+}
+.duration-price {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.duration-price small.price-save {
+    display: block;
+    width: 100%;
+}
+
+.duration-price span.new-price {
+    font-weight: bold;
 }
 .header--wrapper .inner-wrapper:nth-child(1) .card__pricing_custom {
     background: linear-gradient(
@@ -103,4 +122,13 @@ span.card__pricing-month {
 }
 ul.card__list.grid._first {
     height: 80px;
+}
+li.list-group-item.duration {
+    height: 170px;
+}
+section#table-packages {
+    padding: 80px 0;
+}
+.mb-0 {
+    margin-bottom: 0 !important;
 }

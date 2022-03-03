@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+$newblue: #fff;
+$default: #ddd;
+$black: #3c464b;
+body {
+    background-color: #fff;
+    color: $black;
+}
+
+.pricing-plans {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    .plan {
+        &:before {
+            position: relative;
+            content: "";
+            border: 1px solid transparent;
+            width: 100%;
+            display: block;
+            padding: 0.5rem;
+            height: 42px;
+        }
+        width: 90%;
+        margin: 0 auto;
+        @media only screen and (min-width: 1200px) {
+            width: 14.28571428571429%;
+        }
+        min-width: 0;
+        -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+        box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease-in-out;
+        padding: 2.25rem 0;
+        position: relative;
+        will-change: transform;
+        text-align: center;
+        &.options {
+            font-size: 0.75rem;
+            .list-group {
+                .list-group-item {
+                }
+            }
+        }
+        &.popular {
+            &:before {
+                background-color: $default;
+                content: "MOST POPULAR";
+                border-color: $default;
+            }
+        }
+        .plan-header {
+            border: 1px solid $default;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            background-color: RGB(221, 221, 221, 0.2);
+            &.first {
+                border-color: transparent;
+                background-color: transparent;
+            }
+            &.last {
+                border-right: 1px solid $default;
+            }
+            // &.gray {
+            //   background-color: RGB(211, 211, 211, .2);
+            // }
+            //  &.bronze {
+            //    background-color: RGB(205, 127, 50, .2);
+            // }
+            //  &.silver {
+            //    background-color: RGB(192, 192, 192, .2);
+            // }
+            //  &.gold {
+            //    background-color: RGB(241, 196, 15, .2);
+            // }
+            //  &.platinum {
+            //    background-color: RGB(90, 89, 89, .2);
+            // }
+            //  &.ent {
+            //    background-color: RGB(255, 128, 0, .2);
+            // }
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            vertical-align: top;
+            position: relative;
+            min-height: 185px;
+            padding: 1.5rem;
+            h3 {
+                font-size: 2rem;
+                margin: 0;
+                text-align: center;
+                .label {
+                    display: block;
+                    font-size: 1rem;
+                    letter-spacing: 1px;
+                    margin: 0 auto 0px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                .figure {
+                    padding: 5px 0 5px;
+                    position: relative;
+                    span {
+                        display: inline-block;
+                    }
+                    .amount {
+                        &:before {
+                            content: "$";
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                            vertical-align: top;
+                            letter-spacing: normal;
+                        }
+                        &:after {
+                            position: relative;
+                            top: -6px;
+                            content: "/MO";
+                            letter-spacing: normal;
+                            font-weight: 400;
+                            vertical-align: bottom;
+                            font-size: 0.8rem;
+                            text-transform: uppercase;
+                        }
+                        font-size: 4rem;
+                        font-weight: 700;
+                        letter-spacing: -3px;
+                        line-height: 1;
+                    }
+                }
+                .foreword {
+                    display: block;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    padding: 0;
+                }
+                .afterword {
+                    font-size: 0.7rem;
+                    text-transform: uppercase;
+                    padding: 0;
+                    white-space: nowrap;
+                    color: lighten($black, 30%);
+                    letter-spacing: 0px;
+                }
+                .text {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    margin: 0px;
+                    text-align: left;
+                }
+            }
+            .button {
+                margin-top: auto;
+                display: block;
+            }
+        }
+        .plan-info {
+            .list-group {
+                .list-group-item {
+                    border-radius: 0px;
+                    border-width: 1px;
+                    border-right-color: transparent;
+                    font-weight: 700;
+                }
+                &.first {
+                    @media only screen and (min-width: 1200px) {
+                        margin-top: 11.75rem;
+                    }
+                    .list-group-item {
+                        border-color: transparent;
+                        padding: 0.9rem 1rem;
+                    }
+                }
+                &.last {
+                    .list-group-item {
+                        border-right-color: $default;
+                    }
+                }
+            }
+        }
+    }
+}
