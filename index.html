@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link rel="shortcut icon" href="img/fav.png" />
+
+        <meta name="author" content="codepixer" />
+
+        <meta name="description" content="" />
+
+        <meta name="keywords" content="" />
+
+        <meta charset="UTF-8" />
+
+        <title>Industry</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+            rel="stylesheet"
+        />
+        <!--==================== ORDER LIST ====================-->
+        <link rel="stylesheet" href="assets/css/order-list.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
+        <!--==================== UNICONS ====================-->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+        />
+        <!--==================== CARDS ====================-->
+        <link rel="stylesheet" href="assets/css/card.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+    </head>
+
+    <body>
+        <header id="header" id="home">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-lg-6 col-sm-6 col-4 header-top-left no-padding"
+                        >
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa fa-facebook"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa fa-dribbble"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa fa-behance"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-lg-6 col-sm-6 col-8 header-top-right no-padding"
+                        >
+                            <a href="tel:+880 012 3654 896">+123 456 789 000</a>
+                            <a
+                                href="/cdn-cgi/l/email-protection#5e2d2b2e2e312c2a1e3d3132312c32373c703d3133"
+                                ><span class="__cf_email__"
+                                    >demo@email.com</span
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container main-menu">
+                <div
+                    class="row align-items-center justify-content-between d-flex"
+                >
+                    <div id="logo">
+                        <a href="index.html">
+                            <script
+                                data-cfasync="false"
+                                src="assets/js/email-decode.min.js"
+                            ></script>
+                            <img
+                                src="data:image/webp;base64,UklGRjgEAABXRUJQVlA4TCsEAAAvgUAHEMeENpKUbEr/fdAXKRmosS2wbSRJUR3kn+a5DA+GQbaRence78/1JI4k2UqYvPcF4i73v1Z22bob4ZPoRL6G8yfXf1HQUBEIBL74I/DBF2/scERBRaDhjYKGwBdvBAI3nLFHQUHFD7+53XZdgwAgCIAgBISAGAAgCAcBKAQKwKEgAIAAFENs0MMAACBIUCgIBUAQYwAKwwwZCQ5CARAEQAAA3m9SJQKgjx6IHgxDLGEQZBiILghHQh8GIGMNYgCBY4oZFAoCIBRQUNu2PW2bPYrjoB0N+vI7ZmZmZmZm5mnMzMz/13KatMt3XVJE/ydAml4xf3iY7+nkm45N+9cHt6mDbbi4akIX3l3c0LFWnj/EsC68uLCyQ80/dXkp/3URxPlT83tFveZ720GzT6Z0AV72mdCytOjKLUsUtKVGvU2/fm4xV5fI2IyTcNVs+fmrNV5By7yi0I66gvb8eHTttDkiDMgMELxx1x79aFWhlyQK356nd3YYVku/vzKun6w27Ai+DZW4mAYiX9KWhg8hThNLKUYL6BgEQhyFYk2gqoC4mEgldmmDCKhl0mLsEoF7rxadNyeEiV3WIJww5xe9utc6r4iwpgI1ZY0yWoFFgZaysha0+AzUpaBwWH0mVqCFG59u7jRsE8banOANO29+Cu3I9UKqmuwWCnwElEXZa5lsABJBK4gF3rxccM74OcJAmxfcOeMXvHzTlrJOCwq0xAqiJEStqCsKQkWBpBWFTxNt81EdiIWagkS4++3WdsMBgf9tTiAYtt/6drcNsUBDQV0KikiA0AKnoOyk6ipa6oqCgCUVKCnQEikKAm/fTT9l2Cz0+cPm+wjOEKa/e9uGugAWBT7jWyDKWkqF5qoCNBRUtQIn3P7+cJ3h4hxhclfuZMFdNISH332bCoq6zktaoeMMlLpRzxApQgXQwvOv1/cajgqMzxsvEAzu+tfnPUAKilLG5zUE6hanXVopKNCt8MpaEnj/kZOGHQJj8oKAM3j5+L4nRAoqQlB5kaB9JlEgkEfaHAVLQ+Dz67kGNgqMyHMC3sDc8Lkn1FSTBSFSQJGsRoGvxJZUZetNVTORAN8frzCwWGBwXhDwBlY8/t4TiJtLMnYtTtkjgdA9nfGZLw/WG5gpMCgvCHgD7sGXHkElU65bSLyCuGEhRJmSFtC+WxQVSPbD/S2Gs9I9zhrc/Q/darlGmtUgTWqQVjcUlC3PnmzIGZLncjb40FN6Z0mBtlx/sdxwKTMyz2W8YfmL8BvTCoqSO+OCYaHAuLxxAgsNbob8zisKkjwOGzYJTMpzAsFwWH7rCpAm1xr2CPT9x+aDwB7D2t9bIwmuGfabM/MEhtqGCvgzZr901NnHzS6BqX9mghfYZdzszsKs3Ve2CozOeIGtYfcs6bjL1gj0H/U3o5yAXyadFAA="
+                                alt=""
+                                title=""
+                                data-pagespeed-url-hash="971686296"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                            />
+                        </a>
+                    </div>
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li class="menu-active">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <!-- <li class="menu-has-children">
+                                <a href="">Blog</a>
+                                <ul>
+                                    <li>
+                                        <a href="blog-home.html">Blog Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html"
+                                            >Blog Single</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="elements.html">Elements</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner-area relative" id="home">
+            <div class="overlay overlay-bg"></div>
+            <div class="container">
+                <div
+                    class="row fullscreen d-flex align-items-center justify-content-center"
+                    style="height: 657px"
+                >
+                    <div class="banner-content col-lg-12 col-md-12">
+                        <h6 class="text-uppercase">
+                            Don’t look further, here is the key
+                        </h6>
+                        <h1>Iron and Steel Portal</h1>
+                        <p class="text-white p-hero-text">
+                            MWP Iron and Steel Portal is designed and developed
+                            especially for iron and steel industry. This portal
+                            is unique in its own kind having special features
+                            for iron and steel products selling.
+                            <br />
+                            MWP is hereby launching the Portal License, a good
+                            opportunity for Iron and Steel Merchants and
+                            Warehouses in these cities, in order to automate and
+                            computerized their workings for ease and efficient.
+                        </p>
+                        <a
+                            href="#"
+                            class="primary-btn header-btn text-uppercase"
+                            >Get Started</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cat-area section-gap" id="about">
+            <div class="container">
+                <div class="row mb-4 justify-content-center">
+                    <div class="col-12">
+                        <h2 class="main-title">About</h2>
+                    </div>
+                </div>
+                <div class="row theme-list">
+                    <main>
+                        <ol class="gradient-list">
+                            <li>
+                                It is a Licensed Based Usage; all Portal
+                                Proprietary and Intellectual Copy Rights are
+                                same in the name of MWP.
+                            </li>
+                            <li>
+                                License Fee -- - Payment Options
+                                <ul class="inner-list">
+                                    <li>
+                                        a. One Time Setup Charges PKR. 5000/-
+                                        Fixed
+                                    </li>
+                                    <li>
+                                        b. First 30 Days : 30 Day Free Trial
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Free Updates and Bug Fixings of Portal</li>
+                            <li>Free Portal Operators Training</li>
+                            <li>Free Portal Services Consultancy</li>
+                            <li>
+                                Domain and Hosting on World No 1…. Web Servers
+                            </li>
+                        </ol>
+                    </main>
+                </div>
+            </div>
+        </section>
+
+        <section class="packages" id="packages">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2 class="main-title">Packages</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card container grid swiper mySwiper">
+                <div class="card__container grid swiper-wrapper">
+                    <!--==================== CARD 1 ====================-->
+                    <article class="card__content grid swiper-slide">
+                        <div class="header--wrapper">
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >FREE</span
+                                        >30
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/days</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >FREE</span
+                                        >30
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/days</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >FREE</span
+                                        >30
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/days</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >FREE</span
+                                        >30
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/days</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img
+                                    src="assets/images/avatar.webp"
+                                    alt=""
+                                    class="card__header-img"
+                                />
+                            </div>
+
+                            <span class="card__header-subtitle"
+                                >1 Basic User
+                            </span>
+                            <h1 class="card__header-title">Trial (FREE)</h1>
+                        </header>
+
+                        <ul class="card__list grid _first">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    All Basic Modules
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    DiskSpace 500 MB
+                                </p>
+                            </li>
+                        </ul>
+
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+
+                    <!--==================== CARD 2 ====================-->
+                    <article class="card__content grid swiper-slide">
+                        <div class="header--wrapper">
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >3,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/month</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >8,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/Quarterly</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >15,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/6months
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >32,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/Yearly</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img
+                                    src="assets/images/avatar.webp"
+                                    alt=""
+                                    class="card__header-img"
+                                />
+                            </div>
+
+                            <span class="card__header-subtitle"
+                                >1 Basic User
+                            </span>
+                            <h1 class="card__header-title">Basic</h1>
+                        </header>
+
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    All Basic Modules
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Basic SEO and Digital Marketing (Upto 10
+                                    Keywords)
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Detailed Reports
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Free 1 Email
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">FREE SSL</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Available For One Year Subscription
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    DiskSpace 1 GB
+                                </p>
+                            </li>
+                        </ul>
+
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+
+                    <!--==================== CARD 3 ====================-->
+                    <article class="card__content grid swiper-slide">
+                        <div class="header--wrapper">
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >5,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/month</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >14,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/Quarterly</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >27,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/6months
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >55,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/Yearly</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img
+                                    src="assets/images/avatar.webp"
+                                    alt=""
+                                    class="card__header-img"
+                                />
+                            </div>
+
+                            <span class="card__header-subtitle"
+                                >3 Users (AUL)</span
+                            >
+                            <h1 class="card__header-title">Intermediate</h1>
+                        </header>
+
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    All Basic Modules
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    SEO and Digital Marketing (Upto 15 Keywords)
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Detailed Reports
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Free 5 Emails
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Free SSL</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Available For One/Two Year Subscription
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    DiskSpace 2 GB
+                                </p>
+                            </li>
+                        </ul>
+
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+
+                    <!--==================== CARD 4 ====================-->
+                    <article class="card__content grid swiper-slide">
+                        <div class="header--wrapper">
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >8,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/month</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >22,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/Quarterly</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >45,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/6months
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="inner-wrapper">
+                                <div class="card__pricing_custom">
+                                    <div class="card__pricing-number">
+                                        <span class="card__pricing-symbol"
+                                            >PKR</span
+                                        >90,000
+                                    </div>
+                                    <span class="card__pricing-month"
+                                        >/Yearly</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img
+                                    src="assets/images/avatar.webp"
+                                    alt=""
+                                    class="card__header-img"
+                                />
+                            </div>
+
+                            <span class="card__header-subtitle"
+                                >Unlimited Users
+                            </span>
+                            <h1 class="card__header-title">Enterprise</h1>
+                        </header>
+
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Full Modules
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    SEO and Digital Marketing (Upto 25 Keywords)
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Detailed Reports
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Free 10 Emails
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Free SSL</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Available For One/Two Year Subscription
+                                </p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">
+                                    Unlimited DiskSpace
+                                </p>
+                            </li>
+                        </ul>
+
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-area section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>About Us</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore dolore magna aliqua.
+                            </p>
+                            <p class="footer-text">
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Newsletter</h6>
+                            <p>Stay update with our latest</p>
+                            <div class="" id="mc_embed_signup">
+                                <form
+                                    target="_blank"
+                                    novalidate
+                                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                    class="form-inline"
+                                >
+                                    <input
+                                        class="form-control"
+                                        name="EMAIL"
+                                        placeholder="Enter Email"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter Email '"
+                                        required
+                                        type="email"
+                                    />
+                                    <button class="click-btn btn btn-default">
+                                        <i
+                                            class="fa fa-long-arrow-right"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                    <div
+                                        style="
+                                            position: absolute;
+                                            left: -5000px;
+                                        "
+                                    >
+                                        <input
+                                            name="b_36c4fd991d266f23781ded980_aefe40901a"
+                                            tabindex="-1"
+                                            value=""
+                                            type="text"
+                                        />
+                                    </div>
+                                    <div class="info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                        <div class="single-footer-widget">
+                            <h6>Follow Us</h6>
+                            <p>Let us be social</p>
+                            <div
+                                class="footer-social d-flex align-items-center"
+                            >
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://kit.fontawesome.com/274c7ce535.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/bootstrap-theme.min.js"></script>
+        <!-- <script>eval(mod_pagespeed_w$IUp_V7dB);</script> -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+        <!-- <script>eval(mod_pagespeed_ZkYXgPggwB);</script>
+    <script>eval(mod_pagespeed_X0RvW2r5cB);</script>
+    <script>eval(mod_pagespeed_hNW824cZxF);</script>
+    <script>eval(mod_pagespeed_PkJPWeUYtx);</script>
+    <script>eval(mod_pagespeed_x$QXA$vu1F);</script> -->
+        <script src="assets/js/owl-slider.min.js"></script>
+        <!-- <script>eval(mod_pagespeed_gQj1868rQ1);</script>
+    <script>eval(mod_pagespeed_LxZjaJ297S);</script>
+    <script>eval(mod_pagespeed_4ZWUkDTMmi);</script>
+    <script>eval(mod_pagespeed_5KxgfgWiW2);</script>
+    <script>eval(mod_pagespeed_g1rdT_F8H6);</script>
+    <script>eval(mod_pagespeed_F7qk3X4ctV);</script>
+    <script>eval(mod_pagespeed_ifTNc5Dd4i);</script> -->
+        <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+            integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+            data-cf-beacon='{"rayId":"6e5fa5ebabbd1738","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
+            crossorigin="anonymous"
+        ></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    150: {
+                        slidesPerView: 1,
+                    },
+                    700: {
+                        slidesPerView: 1.5,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>

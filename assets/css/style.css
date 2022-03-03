@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+div#service-select select {
+    background: transparent;
+    z-index: 2;
+    border-radius: 0;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #fff !important;
+    width: 100%;
+    border-color: #fff;
+    padding: 0.375rem 0.75rem;
+}
+p.text-white.p-hero-text {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+ul.inner-list {
+    padding: inherit;
+}
+
+ul.inner-list li {
+    font-weight: 500;
+}
+section.packages {
+    padding: 80px 0;
+    background: #eee !important;
+}
+.section-gap {
+    padding: 80px 0;
+}
+section#feature {
+    padding: 80px 0;
+    background: #fff !important;
+}
+.card__container.grid.swiper-wrapper {
+    cursor: -webkit-grab;
+}
+.card__pricing_custom {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: auto;
+}
+.header--wrapper .inner-wrapper:nth-child(1) .card__pricing_custom {
+    background: linear-gradient(
+        157deg,
+        var(--first-color-light) -12%,
+        var(--first-color) 109%
+    );
+}
+.header--wrapper .inner-wrapper:nth-child(2) .card__pricing_custom {
+    background: linear-gradient(
+        157deg,
+        hsl(144deg 96% 69%) -12%,
+        hsl(216deg 96% 54% / 96%) 109%
+    );
+}
+.header--wrapper .inner-wrapper:nth-child(3) .card__pricing_custom {
+    background: linear-gradient(
+        157deg,
+        hsl(338deg 96% 69%) -12%,
+        hsl(194deg 96% 54%) 109%
+    );
+}
+.header--wrapper .inner-wrapper:nth-child(4) .card__pricing_custom {
+    background: linear-gradient(
+        157deg,
+        hsl(144deg 96% 69%) -12%,
+        hsl(158deg 96% 54%) 109%
+    );
+}
+.card__pricing-number {
+    font-size: 20px;
+}
+.header--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.header--wrapper .inner-wrapper {
+    flex: 1;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+.card.container.grid.swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
+    padding: 35px 20px;
+}
+span.card__pricing-symbol {
+    font-size: 10px;
+}
+span.card__pricing-month {
+    font-size: 10px;
+}
+.card__pricing-number {
+    font-size: 18px;
+}
+ul.card__list.grid._first {
+    height: 80px;
+}
