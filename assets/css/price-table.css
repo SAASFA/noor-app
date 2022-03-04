@@ -192,29 +192,29 @@ small.price-save {
         overflow-x: scroll;
     }
     /* width */
-    .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar {
+    /* .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar {
         width: 5px;
         height: 10px;
-    }
+    } */
 
     /* Track */
-    .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar-track {
+    /* .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey;
-    }
+    } */
 
     /* Handle */
-    .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar-thumb {
+    /* .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar-thumb {
         background: linear-gradient(
             157deg,
             #e3c167 -12%,
             #caa343 109%
         ) !important;
-    }
+    } */
 
     /* Handle on hover */
-    .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar-thumb:hover {
+    /* .pricing-plans.d-flex.pricing-plans-wrap.my-auto::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(157deg, #b1964e -12%, #977b34 109%);
-    }
+    } */
 }
 @media only screen and (max-width: 992px) {
     /* .pricing-plans.d-flex.pricing-plans-wrap.my-auto {
