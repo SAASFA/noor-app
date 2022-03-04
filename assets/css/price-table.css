@@ -217,6 +217,9 @@ small.price-save {
     } */
 }
 @media only screen and (max-width: 992px) {
+    p.text-white.p-hero-text {
+        width: 100%;
+    }
     /* .pricing-plans.d-flex.pricing-plans-wrap.my-auto {
         flex-direction: column;
     } */
