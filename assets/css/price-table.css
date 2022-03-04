@@ -171,6 +171,11 @@ body {
         margin-top: 11.75rem;
     }
 }
+@media only screen and (max-width: 992px) {
+    .pricing-plans.d-flex.pricing-plans-wrap.my-auto {
+        flex-direction: column;
+    }
+}
 
 .pricing-plans .plan .plan-info .list-group.first .list-group-item {
     border-color: transparent;
