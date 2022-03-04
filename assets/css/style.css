@@ -68,6 +68,7 @@ section#home {
 
 .duration-price span.new-price {
     font-weight: bold;
+    letter-spacing: 1px;
 }
 .header--wrapper .inner-wrapper:nth-child(1) .card__pricing_custom {
     background: linear-gradient(
@@ -127,7 +128,6 @@ ul.card__list.grid._first {
     height: 80px;
 }
 li.list-group-item.duration {
-    height: 170px;
     padding-bottom: 140px;
 }
 .pricing-plans .plan .plan-info .list-group.first .list-group-item {
