@@ -173,6 +173,10 @@ small.price-save {
     font-weight: bold;
 }
 
+.pricing-plans .plan .plan-info .list-group.first {
+    margin-top: 11.75rem !important;
+}
+
 @media only screen and (max-width: 1200px) {
     .pricing-plans .plan .plan-info .list-group.first {
         margin-top: 11.75rem !important;
