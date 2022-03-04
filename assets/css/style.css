@@ -36,10 +36,13 @@ section#about {
     background: #f3f3f3 !important;
 }
 img.logo-mwp {
-    width: 100px;
+    width: 50px;
 }
 section#home {
-    background: url("../images/Iron-and-Steel.jpg");
+    background: url("../images/Iron-and-Steel.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
 }
 /* .card__container.grid.swiper-wrapper {
     cursor: -webkit-grab;
@@ -125,10 +128,26 @@ ul.card__list.grid._first {
 }
 li.list-group-item.duration {
     height: 170px;
+    padding-bottom: 140px;
+}
+.pricing-plans .plan .plan-info .list-group.first .list-group-item {
+    font-size: 14px;
 }
 section#table-packages {
     padding: 80px 0;
 }
 .mb-0 {
     margin-bottom: 0 !important;
+}
+.features-list ol {
+    margin: 15px 0;
+    list-style-type: decimal !important;
+    padding: 0 15px;
+}
+.mb-5 {
+    margin-bottom: 2.5rem;
+}
+span.gap {
+    margin-left: 5px;
+    font-weight: 600;
 }

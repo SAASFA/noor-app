@@ -5057,13 +5057,18 @@ h6 {
 }
 #header {
     padding: 0 0 20px 0;
-    position: fixed;
+    /* position: fixed;
     left: 0;
     top: 0;
-    right: 0;
+    right: 0; */
     transition: all 0.5s;
-    z-index: 997;
+    /* z-index: 997; */
     background: #fff !important;
+}
+section#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #header.header-scrolled {
     box-shadow: -21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3);
@@ -5098,7 +5103,7 @@ h6 {
         font-size: 28px;
     }
     #header #logo img {
-        max-height: 40px;
+        max-height: 60px;
     }
 }
 .nav-menu,
