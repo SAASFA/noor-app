@@ -186,6 +186,12 @@ small.price-save {
         height: auto;
         padding-bottom: inherit;
     }
+    .pricing-plans .plan .plan-header {
+        border-right-color: #ddd;
+    }
+    .pricing-plans .plan .plan-info .list-group .list-group-item {
+        border-right-color: #ddd !important;
+    }
 }
 
 .pricing-plans .plan .plan-info .list-group.first .list-group-item {
