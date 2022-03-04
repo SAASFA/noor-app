@@ -74,7 +74,7 @@ ol.gradient-list > li::before {
     -ms-flex-align: end;
     align-items: flex-end;
     content: counter(gradient-counter);
-    color: #1d1f20;
+    color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
