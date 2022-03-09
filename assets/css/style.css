@@ -298,3 +298,10 @@ height: 0;
     width: 100% !important;
     height: 100% !important;
 }
+
+.sidebar-iframe {
+    background-color: #eaf0f3;
+    border: 1px solid #e2e5e7;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
