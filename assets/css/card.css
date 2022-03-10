@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -20,8 +20,8 @@
     --container-color: #fff;
 
     /*========== Font and typography ==========*/
-    --body-font: "Lato", sans-serif;
-    --pricing-font: "Rubik", sans-serif;
+    --body-font: 'Lato', sans-serif;
+    --pricing-font: 'Rubik', sans-serif;
     --biggest-font-size: 1.75rem;
     --normal-font-size: 0.938rem;
     --h2-font-size: 1.25rem;
@@ -63,7 +63,7 @@ body {
     color: var(--text-color);
 }
 
-ul {
+.plan ul {
     list-style: none;
 }
 
@@ -172,7 +172,7 @@ img {
 
 .card__pricing::after,
 .card__pricing::before {
-    content: "";
+    content: '';
     position: absolute;
 }
 
