@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 div#service-select select {
     background: transparent;
     z-index: 2;
@@ -13,11 +14,13 @@ div#service-select select {
     border-color: #fff;
     padding: 0.375rem 0.75rem;
 }
+
 p.text-white.p-hero-text {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
 ul.inner-list {
     padding: inherit;
 }
@@ -25,26 +28,32 @@ ul.inner-list {
 ul.inner-list li {
     font-weight: 500;
 }
+
 section.packages {
     padding: 80px 0;
     background: #eee !important;
 }
+
 .section-gap {
     padding: 80px 0;
 }
+
 section#about {
     padding: 80px 0;
     background: #f3f3f3 !important;
 }
+
 img.logo-mwp {
     width: 75px;
 }
+
 section#home {
     background: url('../images/Iron-and-Steel.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     height: 650px;
 }
+
 /* .card__container.grid.swiper-wrapper {
     cursor: -webkit-grab;
 } */
@@ -57,6 +66,7 @@ section#home {
     border-radius: 10px;
     width: auto;
 }
+
 .duration-price {
     font-size: 12px;
     font-weight: normal;
@@ -71,83 +81,102 @@ section#home {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 .header--wrapper .inner-wrapper:nth-child(1) .card__pricing_custom {
     background: linear-gradient(
-        157deg,
-        var(--first-color-light) -12%,
-        var(--first-color) 109%
+            157deg,
+            var(--first-color-light) -12%,
+            var(--first-color) 109%
     );
 }
+
 .header--wrapper .inner-wrapper:nth-child(2) .card__pricing_custom {
     background: linear-gradient(
-        157deg,
-        hsl(144deg 96% 69%) -12%,
-        hsl(216deg 96% 54% / 96%) 109%
+            157deg,
+            hsl(144deg 96% 69%) -12%,
+            hsl(216deg 96% 54% / 96%) 109%
     );
 }
+
 .header--wrapper .inner-wrapper:nth-child(3) .card__pricing_custom {
     background: linear-gradient(
-        157deg,
-        hsl(338deg 96% 69%) -12%,
-        hsl(194deg 96% 54%) 109%
+            157deg,
+            hsl(338deg 96% 69%) -12%,
+            hsl(194deg 96% 54%) 109%
     );
 }
+
 .header--wrapper .inner-wrapper:nth-child(4) .card__pricing_custom {
     background: linear-gradient(
-        157deg,
-        hsl(144deg 96% 69%) -12%,
-        hsl(158deg 96% 54%) 109%
+            157deg,
+            hsl(144deg 96% 69%) -12%,
+            hsl(158deg 96% 54%) 109%
     );
 }
+
 .card__pricing-number {
     font-size: 20px;
 }
+
 .header--wrapper {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .header--wrapper .inner-wrapper {
     flex: 1;
     margin-bottom: 5px;
     padding: 0 15px;
 }
+
 .card.container.grid.swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
     padding: 35px 20px;
 }
+
 span.card__pricing-symbol {
     font-size: 10px;
 }
+
 span.card__pricing-month {
     font-size: 10px;
 }
+
 .card__pricing-number {
     font-size: 18px;
 }
+
 ul.card__list.grid._first {
     height: 80px;
 }
+
 li.list-group-item.duration {
     padding-bottom: 140px;
 }
+
 .pricing-plans .plan .plan-info .list-group.first .list-group-item {
     font-size: 14px;
 }
+
 section#table-packages {
-    padding: 80px 0;
+    padding: 40px 0;
 }
+
 .mb-0 {
     margin-bottom: 0 !important;
 }
+
 .features-list ol {
     margin: 15px 0;
     list-style-type: decimal !important;
     padding: 0 15px;
 }
+
 .mb-5 {
     margin-bottom: 2.5rem;
 }
+
 span.gap {
     margin-left: 5px;
     font-weight: 600;
@@ -287,6 +316,7 @@ fieldset {
     position: relative;
     padding-bottom: 10px;
 }
+
 .google-maps iframe {
     width: 100% !important;
     height: 100% !important;
@@ -298,6 +328,134 @@ fieldset {
     padding: 10px 10px;
     margin-bottom: 20px;
 }
+
 .features-list ul {
     list-style: inside;
+}
+
+.dashboard-cards {
+    position: relative;
+    padding-bottom: 50px;
+    margin: 0 !important;
+}
+
+.dashboard-cards .card {
+    background: #ffffff;
+    display: inline-block;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    z-index: 20;
+    padding: 0 !important;
+    margin: 5px 5px 10px 5px;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.3s 0s ease-in;
+    transition: all 0.3s 0s ease-in;
+    z-index: 1;
+    width: calc(33.33333333% - 10px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dashboard-cards .card .card-description {
+    position: relative;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    padding: 10px 15px 0 15px;
+}
+
+.dashboard-cards .card:hover {
+    box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+    transition: all 0.3s ease;
+}
+
+.dashboard-cards .card .card-title {
+    background: #ffffff;
+    padding: 20px 15px;
+    position: relative;
+    z-index: 0;
+}
+
+.dashboard-cards .card .card-title h2 {
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-cards .card .card-title h2 small {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    letter-spacing: -0.025em;
+}
+
+.dashboard-cards .card .card-flap {
+    background: #d9d9d9;
+    position: absolute;
+    width: 100%;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.dashboard-cards .card .flap1 {
+    -webkit-transition: all 0.3s 0.3s ease-out;
+    transition: all 0.3s 0.3s ease-out;
+    z-index: -1;
+}
+
+.dashboard-cards.showing .card {
+    cursor: pointer;
+    opacity: 0.6;
+    -webkit-transform: scale(0.88);
+    transform: scale(0.88);
+}
+
+.dashboard-cards .no-touch .dashboard-cards.showing .card:hover {
+    opacity: 0.94;
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+}
+
+.dashboard-cards .card.d-card-show {
+    opacity: 1 !important;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+
+.dashboard-cards .card.d-card-show .card-flap {
+    background: #ffffff;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.dashboard-cards .card.d-card-show .flap1 {
+    -webkit-transition: all 0.3s 0s ease-out;
+    transition: all 0.3s 0s ease-out;
+}
+
+.dashboard-cards .task-list {
+    padding: 0 !important;
+}
+
+.dashboard-cards .task-list li {
+    padding: 10px 0;
+    padding-left: 10px;
+    margin: 3px 0;
+    list-style-type: none;
+    border-bottom: 1px solid #e9ebed;
+    border-left: 3px solid #caa343;
+    transition: all .2s ease;
+}
+
+.dashboard-cards .task-list li:hover {
+    transition: all .2s ease;
+}
+
+.dashboard-cards .task-list li span {
+    float: right;
+    color: #caa343  ;
+    margin-right: 5px;
 }
